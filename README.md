@@ -1,4 +1,4 @@
-# Solution
+# Solution codewars.com
 
 "Next bigger number with the same digits"
 
