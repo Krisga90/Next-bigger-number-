@@ -3,14 +3,12 @@
 #include <iostream>
 #include <string>
 
-
-
 long nextBigger(long n) {
   
   std::string value = std::to_string(n);
-  std::next_permutation(value.begin(), value.end());
-  long new_n = std::stol(value);
-  return new_n > n ? new_n: -1l;
+  if(std::next_permutation(value.begin(), value.end()))
+    return std::stol(value);
+  return -1l;
 }
 
 int main() {
